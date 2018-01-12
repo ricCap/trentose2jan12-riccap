@@ -1,12 +1,11 @@
 module.exports.getArea = function getArea(lati) {
 
   // Check input validity
-  if (!lati || !Array.isArray(lati) || len(lati) != 2) {
+  if (!lati || !Array.isArray(lati) || lati.length != 2) {
     return -1
   }
 
-  // Check if inputs are whole numbers and conversion
-  if (!isWholeNumber(lati[0]) !!isWholeNumber(lati[1])) {
+  if (!isWholeNumber(lati[0]) || !isWholeNumber(lati[1])) {
     return -1
   }
 
@@ -20,5 +19,5 @@ module.exports.getArea = function getArea(lati) {
 function isWholeNumber(str) {
   i = parseInt(str)
   f = parseFloat(str)
-  return !isNan(i) && !isNan(f) && i == f
+  return !isNaN(i) && !isNaN(f) && i == f
 }

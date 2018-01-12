@@ -1,0 +1,31 @@
+{
+  "name": "trentose2jan12-riccap",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1",
+    "jest-html-reporter": "^0.5.3"
+  },
+  "scripts": {
+    "test": "$(npm bin)/jest"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricCap/trentose2jan12-riccap.git"
+  },
+  "author": "Riccardo Capraro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricCap/trentose2jan12-riccap/issues"
+  },
+  "homepage": "https://github.com/ricCap/trentose2jan12-riccap#readme"
+}
