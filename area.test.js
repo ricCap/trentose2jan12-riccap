@@ -30,4 +30,8 @@ describe('Test getArea', () => {
     expect(getArea(["0", "3.5"])).toBe(-1)
   });
 
+  test('Valid array valid input strings ["1","2"]', () => {
+    expect(getArea(["1", "2"])).toBe(2)
+  });
+
 });

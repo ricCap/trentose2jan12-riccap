@@ -1,6 +1,7 @@
 {
   "name": "trentose2jan12-riccap",
   "version": "1.0.0",
+  "main": "server.js",
   "description": "",
   "dependencies": {
     "body-parser": "^1.18.2",
