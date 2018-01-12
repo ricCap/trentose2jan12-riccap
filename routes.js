@@ -3,6 +3,12 @@ var router = express.Router();
 var getArea = require('./area').getArea;
 
 router
+  .get('/', function(req, res) {
+    res.status(200).json({
+      "message": "Use /getArea?side1=&side2="
+    })
+  })
+
   .get('/getArea', function(req, res) {
 
     const side1 = req.query.side1
