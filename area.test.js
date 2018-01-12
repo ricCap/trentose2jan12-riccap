@@ -18,6 +18,10 @@ describe('Test getArea', () => {
     expect(getArea([1, 4])).toBe(4)
   });
 
+  test('Valid array invalid negative input [-3,4]', () => {
+    expect(getArea([-3, 4])).toBe(-1)
+  });
+
   test('Valid input with boundary value [0,4]', () => {
     expect(getArea([0, 4])).toBe(0)
   });

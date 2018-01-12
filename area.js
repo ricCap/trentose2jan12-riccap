@@ -5,7 +5,7 @@ module.exports.getArea = function getArea(lati) {
     return -1
   }
 
-  if (!isWholeNumber(lati[0]) || !isWholeNumber(lati[1])) {
+  if (!isWholePositiveNumber(lati[0]) || !isWholePositiveNumber(lati[1])) {
     return -1
   }
 
@@ -16,8 +16,8 @@ module.exports.getArea = function getArea(lati) {
 
 }
 
-function isWholeNumber(str) {
+function isWholePositiveNumber(str) {
   i = parseInt(str)
   f = parseFloat(str)
-  return !isNaN(i) && !isNaN(f) && i == f
+  return !isNaN(i) && !isNaN(f) && i == f && i >= 0
 }
